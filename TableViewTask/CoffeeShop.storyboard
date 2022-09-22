@@ -57,10 +57,18 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9XH-XK-zUg">
+                                                    <rect key="frame" x="373.5" y="192.5" width="20.5" height="17.5"/>
+                                                    <color key="tintColor" systemColor="systemYellowColor"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="9XH-XK-zUg" secondAttribute="trailing" constant="20" id="2eQ-ox-x5X"/>
                                                 <constraint firstItem="2q2-tp-PTp" firstAttribute="leading" secondItem="p7w-c1-1Ws" secondAttribute="leadingMargin" id="DzG-8T-fZJ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2q2-tp-PTp" secondAttribute="trailing" constant="10" id="GOE-2P-Don"/>
+                                                <constraint firstItem="9XH-XK-zUg" firstAttribute="top" secondItem="ec6-qq-EfS" secondAttribute="bottom" constant="20" id="GTc-hn-ui5"/>
+                                                <constraint firstItem="9XH-XK-zUg" firstAttribute="top" secondItem="ec6-qq-EfS" secondAttribute="bottom" constant="20" id="Yqp-V0-dhw"/>
+                                                <constraint firstAttribute="trailing" secondItem="9XH-XK-zUg" secondAttribute="trailing" constant="20" id="ctm-7R-Dhk"/>
                                                 <constraint firstItem="ec6-qq-EfS" firstAttribute="top" secondItem="p7w-c1-1Ws" secondAttribute="topMargin" constant="10" id="dGv-OT-mqq"/>
                                                 <constraint firstItem="ec6-qq-EfS" firstAttribute="centerX" secondItem="p7w-c1-1Ws" secondAttribute="centerX" id="fcD-AC-tff"/>
                                                 <constraint firstAttribute="bottom" secondItem="2q2-tp-PTp" secondAttribute="bottom" constant="10" id="ke4-zV-2AA"/>
@@ -71,6 +79,7 @@
                                         <connections>
                                             <outlet property="addressLabel" destination="mSD-le-aVl" id="F46-Zy-OeP"/>
                                             <outlet property="categoryLabel" destination="uV2-U3-X9z" id="6bt-nX-GoE"/>
+                                            <outlet property="favoriteImageView" destination="9XH-XK-zUg" id="uez-ch-KTh"/>
                                             <outlet property="nameLabel" destination="2uL-8N-dOf" id="rvc-WM-YtN"/>
                                             <outlet property="thumbImageView" destination="ec6-qq-EfS" id="fRI-nN-PB1"/>
                                         </connections>
@@ -93,16 +102,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1196" y="-1168"/>
+            <point key="canvasLocation" x="-3667" y="-1735"/>
         </scene>
     </scenes>
     <resources>
         <image name="bojaeatery" width="427" height="427"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
